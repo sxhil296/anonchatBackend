@@ -12,6 +12,7 @@ app.use(express.json())
 app.use('/chat',router)
 app.get('/', (_req, res) => {
     res.send('Hello World! 2')
+    console.log('api is running')
 })
 
 app.listen(8000, () => {
