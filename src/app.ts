@@ -1,4 +1,4 @@
-import express, { Router } from "express";
+import express  from "express";
 const app = express();
 import router from './route/user'
 import cors from 'cors'
@@ -10,7 +10,7 @@ app.use(cors(
 ))
 app.use(express.json())
 app.use('/chat',router)
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
     res.send('Hello World! 2')
 })
 
